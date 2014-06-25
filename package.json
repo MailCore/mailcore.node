@@ -1,0 +1,37 @@
+{
+  "name": "mailcore",
+  "version": "0.0.0",
+  "description": "a simple API to work with e-mail protocols IMAP, POP and SMTP",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape tests/test-*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Mailcore/mailcore.node.git"
+  },
+  "keywords": [
+    "mailcore",
+    "imap",
+    "smtp"
+  ],
+  "author": "Hoa V. DINH <dinh.viet.hoa@gmail.com>",
+  "maintainers": [
+    {
+      "name": "Hoa V. DINH",
+      "email": "dinh.viet.hoa@gmail.com"
+    },
+    {
+      "name": "Yorkie Neil",
+      "email": "yorkiefixer@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mailcore/mailcore.node/issues"
+  },
+  "homepage": "https://github.com/Mailcore/mailcore.node",
+  "dependencies": {
+    "libetpan": "^0.2.0"
+  }
+}
