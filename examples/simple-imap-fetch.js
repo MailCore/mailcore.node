@@ -1,10 +1,10 @@
 
-var IMAPSession = require('../lib/imap-session').IMAPSession;
+var IMAPSession = require('../lib/imapsession').IMAPSession;
 var imap = new IMAPSession(993, 'imap.gmail.com', {
-  secure: 'tls',
+  secure: 'ssl',
   auth: {
     username: 'yorkiefixer@gmail.com',
-    password: 'xxxxxxx'
+    password: 'xxxxxxxxx'
   }
 });
 
@@ -17,7 +17,7 @@ imap.on('connect', function() {
   imap.select('INBOX', function(inbox) {
     console.log(inbox);
   });
-  imap.fetchMessagesByUID('*', '*', null, function(messages) {
+  imap.fetchMessagesByNumber(0, 2, null, function(messages) {
     console.log(messages);
   });
 });
