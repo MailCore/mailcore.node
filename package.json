@@ -4,7 +4,8 @@
   "description": "a simple API to work with e-mail protocols IMAP, POP and SMTP",
   "main": "index.js",
   "scripts": {
-    "test": "tape tests/test-*.js"
+    "test": "tape tests/test-*.js",
+    "example": "node examples/simple-imap-fetch"
   },
   "repository": {
     "type": "git",

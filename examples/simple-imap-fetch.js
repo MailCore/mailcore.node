@@ -1,10 +1,10 @@
 
-var IMAPSession = require('./lib/imap').IMAPSession;
+var IMAPSession = require('../lib/imap-session').IMAPSession;
 var imap = new IMAPSession(993, 'imap.gmail.com', {
   secure: 'tls',
   auth: {
     username: 'yorkiefixer@gmail.com',
-    password: 'xxxxxxxxx'
+    password: 'xxxxxxx'
   }
 });
 
